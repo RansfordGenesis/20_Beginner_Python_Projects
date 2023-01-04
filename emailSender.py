@@ -1,10 +1,10 @@
 from email.message import EmailMessage
 import ssl, smtplib
 
-email_sender = 'jefferykyeigenesis@gmail.com'
-email_password = 'husuzspwvtwxjdqe'
+email_sender = 'someone@gmail.com'
+email_password = 'app_password'
 
-email_receiver = 'ransfordgenesis@gmail.com'
+email_receiver = 'friend@gmail.com'
 
 subject = 'Health'
 body = """
