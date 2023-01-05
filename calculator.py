@@ -14,4 +14,4 @@ def div(a, b):
     answer = a / b
     print(answer)
 
-print("A. Addition\n B. Subtraction\n C. Multiplication\n D. Division\n E. Quit")
+print("\n A. Addition\n B. Subtraction\n C. Multiplication\n D. Division\n E. Quit")
