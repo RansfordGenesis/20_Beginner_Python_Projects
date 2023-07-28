@@ -13,6 +13,12 @@ def add_expense(amount, date, category, description):
         writer = csv.writer(csvfile)
         writer.writerow([amount, date, category, description])
 
+def view_expenses():
+    with open('expense_tracker/data/expenses.csv', 'r') as csvfile:
+        reader = csv.reader(csvfile)
+        for row in reader:
+            print(row)
+
 def main():
     args = parse_arguments()
 
@@ -32,12 +38,7 @@ def main():
 
     elif command == 'view':
         #print all expenses
-        with open('expense_tracker/data/expenses.csv', 'r') as csvfile:
-            reader = csv.reader(csvfile)
-            for row in reader:
-                print(row)
-
-add_expense(10, '2023-01-01', 'Other', 'Bought data')
+        view_expenses()
 
 
     
